@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-10">
+        <h1 class="max-w-2xl mx-auto rounded-lg text-5xl text-center underline p-10 bg-zinc-950 text-white">Welcome to QNA section</h1>
+    </header>
+
+    <main class="p-8">
+
+        <section class="mb-16 bg-red-700 text-white p-10">
+            <p class="text-2xl"><span class="font-medium underline">Question: </span>Discuss the scope of var, let, and const
+                <br><br>
+                <span class="font-medium underline">Answer:</span><br>
+                To declare variables in JavaScript we use var, let and const. But each of them has different scoping rules. <br><br>
+                <span class="font-medium">var:</span> Variables that are declared using var are either function scoped or global scoped but not blocked scoped. That means the variables declared by var in a function can be used anywhere inside the function and same as global. var is not blocked scoped, that means if we declare a var in a blocked scoped that can be accessible from outside the scope. <br>
+                <span class="font-medium">let:</span> Variables declared with let is blocked scoped that means these variables can only be accessible inside the block. It can not be accessed outside it, but we can reassigned the variable value within the block. 
+                <br>
+                <span class="font-medium">const:</span> Variables declared with const are also blocked scoped but they have something unique which is we can't reassigned the value after they are initially assigned. That makes the variable to have a constant value.
+                </p>
+        </section>
+
+        <section class="mb-16 bg-amber-200 p-10">
+            <p class="text-2xl"><span class="font-medium underline">Question: </span>Tell us the use cases of null and undefined
+                <br><br>
+            <span class="font-medium underline">Answer:</span> In JavaScript, when there are lack of defined values or absence of a value found, then JavaScript automatically provide two values which are 'null' and 'undefined'. <br><br>
+
+            <span class="font-medium">null:</span> <br>
+                <span class="font-medium">1.Explicit Absence of Value: </span>When JavaScript found there is explicit assignment of a variable as 'null' then it returns 'null' as a value. <br>
+                <span class="font-medium">2. Object property value: </span>If a property of an object in JavaScript has 'null' value, that indicates the property exists but value doesn't exist.
+                <br>
+            <br>
+            <span class="font-medium">undefined:</span> <br>
+            <span class="font-medium">1. Default Value: </span>When JavaScript found there is no assignment of a variable then it returns 'undefined' as a value. <br>
+            <span class="font-medium">2. Parameter of Function: </span>When JavaScript found there is no value assigned as parameter of a function when it is called then it returns 'undefined' as a default. <br>
+            <span class="font-medium">3. Property Access: </span>When we try to access a property of an object which is not defined then JavaScript return 'undefined' <br>
+
+            </p>
+        </section>
+
+        <section class="bg-rose-500 p-10">
+            <p class="text-2xl"><span class="font-medium underline">Question: </span>What do you mean by REST API?
+                <br><br>
+            <p class="text-2xl"> <span class="font-medium underline">Answer: </span>REST API (Representational State Transfer Application Programming Interface) is a set of architectural principles and conventions for designing website services.
+                It allows different software applications to communicate over the internet using the HTTP methods. REST APIs are resources represented by URLs and are characterized, and the use of HTTP methods for operations on these resources, making them widely used for building scalable web services.</p>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
